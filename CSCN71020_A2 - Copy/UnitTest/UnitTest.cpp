@@ -43,5 +43,16 @@ namespace UnitTest
 
 			Assert::AreEqual(75, length); 
 		}
+
+		TEST_METHOD(Test_setLength_highRange) 
+		{
+			int length = 4;
+			int input = 150;
+
+			setLength(input, &length); 
+
+			Assert::AreEqual(4, length);
+		}
+
 	};
 }
