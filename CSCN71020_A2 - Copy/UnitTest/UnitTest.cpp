@@ -54,5 +54,14 @@ namespace UnitTest
 			Assert::AreEqual(4, length);
 		}
 
+		TEST_METHOD(Test_setLength_negativeValue)
+		{
+			int length = 5;
+			int input = -5;
+
+			setLength(input, &length);
+
+			Assert::AreEqual(5, length);
+		}
 	};
 }
