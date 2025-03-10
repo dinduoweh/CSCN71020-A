@@ -73,5 +73,15 @@ namespace UnitTest
 
 			Assert::AreEqual(70, width); 
 		}
+
+		TEST_METHOD(Test_setWidth_similar)
+		{
+			int width = 6;
+			int input = 6;
+
+			setWidth(input, &width);
+
+			Assert::AreEqual(6, width);
+		}
 	};
 }
