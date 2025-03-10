@@ -33,5 +33,15 @@ namespace UnitTest
 
 			Assert::AreEqual(expectedvalue, actualvalue);
 		}
+
+		TEST_METHOD(Test_setLength_validInput)
+		{
+			int length = 5;
+			int input = 75; 
+			
+			setLength(input, &length);  
+
+			Assert::AreEqual(75, length); 
+		}
 	};
 }
